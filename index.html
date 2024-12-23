@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Shop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        #logo {
+            float: left;
+            /* background-color: aliceblue; */
+            margin-left: 0px;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-image: url("./bg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+
+        header {
+            height: 15vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+            border-bottom: 1px solid black;
+
+        }
+
+        .home {
+            box-shadow: 1px 2px 14px black;
+        }
+
+        .offers {
+            box-shadow: 1px 2px 14px black;
+        }
+
+        .buy-now {
+            box-shadow: 1px 2px 14px black;
+        }
+
+        .sell-now {
+            box-shadow: 1px 2px 14px black;
+        }
+
+        .abtus {
+            box-shadow: 1px 2px 14px black;
+        }
+
+        .signup {
+            box-shadow: 1px 2px 14px black;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0 10rem 0 0;
+        }
+
+        ul li a {
+            margin: 0px 20px 5px 0px;
+            border: 2px solid white;
+            padding: 0px 10px;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+
+        /* .logo{
+            border: 2px solid white; 
+
+             width: 200px;
+            height: 200px; 
+
+        } */
+        .lg {
+            width: 200px;
+            height: 120px;
+            /* margin-left: -470%; */
+            float: left;
+        }
+
+        .signup {
+            background-color: white;
+            color: black;
+
+
+        }
+
+        .signup:hover {
+            background-color: black;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+            flex-wrap: wrap;
+
+        }
+
+        main h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 0px 10px;
+        }
+
+        main p {
+            font-size: 15px;
+            font-weight: 1000;
+            line-height: 20px;
+            margin: 30px 0px;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .contentleft {
+            flex: 1;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .contentmid {
+            flex: 2;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .contentright {
+            flex: 1;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .mercury {
+            max-width: 15rem;
+            margin: 0px 100px;
+            height: auto;
+
+
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: white;
+            outline: none;
+            border: none;
+            color: black;
+            box-shadow: 1px 2px 14px black;
+            border-radius: 50px;
+            font-weight: 1000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .bg {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo"> <img src="logo.png" class="lg" alt="logo" srcset=""></div>
+        <nav>
+            <ul class="nav-opt">
+                <li><a href="/home" target="_blank" class="home">Home</a></li>
+                <li><a href="#" class="offers">Offers</a></li>
+                <li><a href="#" class="buy-now">Buy Now</a></li>
+                <li><a href="#" class="sell-now">Sell Now</a></li>
+                <li><a href="#" class="abtus">About Us</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <p class="bg"><img src="bg.jpg" class="bg" alt="" srcset=""></p> -->
+        <div class="contentleft">
+            <h2>Mercury</h2>
+        </div>
+        <div class="contentmid">
+            <p>Mercury is the first planet from the Sun and the smallest in the Solar System. In English,<br> it is
+                named
+                after the ancient Roman god Mercurius, god of commerce and communication, and the messenger of the gods.
+                Mercury is classified as a terrestrial planet, with roughly the same surface gravity as Mars.
+
+            </p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+            <img src="mercury.png" class="mercury" alt="" srcset="">
+        </div>
+
+    </main>
+
+</body>
+
+</html>
